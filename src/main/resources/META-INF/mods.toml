@@ -1,0 +1,16 @@
+modLoader="javafml" #mandatory
+loaderVersion="[35,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="All rights reserved"
+issueTrackerURL="https://github.com/RidleyDyne/Ridlium/issues" #optional
+[[mods]] #mandatory
+modId="ridlium" #mandatory
+version="${version}" #mandatory
+displayName="RidleyDyne Ridlium" #mandatory
+#updateJSONURL="" #optional
+displayURL="https://github.com/RidleyDyne/Ridlium" #optional
+#logoFile="" #optional
+#credits="" #optional
+authors="Mark Strendin" #optional
+description='''
+This mod adds the Ridlium resource, used by several other mods.
+'''
