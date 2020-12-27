@@ -1,0 +1,7 @@
+{
+    "variants": {
+      "": {
+        "model": "ridlium:block/ridlium_block"
+      }
+    }
+  }
