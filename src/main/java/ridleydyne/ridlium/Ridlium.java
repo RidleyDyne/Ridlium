@@ -3,13 +3,15 @@ package ridleydyne.ridlium;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.RegistryEvent.Register;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import ridleydyne.ridlium.init.ModBlocks;
-import ridleydyne.ridlium.item.*;
+import ridleydyne.ridlium.init.ModItems;
+import ridleydyne.ridlium.item.RidliumItemGroup;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -20,6 +22,8 @@ import java.util.stream.Collectors;
 @Mod("ridlium")
 public class Ridlium
 {
+    public static final ItemGroup ITEM_GROUP = new RidliumItemGroup("ridlium");
+
     public Ridlium() {
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -39,15 +43,12 @@ public class Ridlium
         @SubscribeEvent
         public static void RegisterItems(final Register<Item> event) {
             // Items
-            event.getRegistry().registerAll(
-                new RidliumDust().setRegistryName("ridlium_dust"),
-                new RidliumIngot().setRegistryName("ridlium_ingot")
-            );
+            for(ModItems item : ModItems.values()){
+                event.getRegistry().register(item.getItem());
+            }
 
             for(ModBlocks block : ModBlocks.values()) {
-                BlockItem item = new BlockItem(block.getBlock(), new Item.Properties().maxStackSize(64));
-                item.setRegistryName(block.getName());
-                event.getRegistry().register(item);
+                event.getRegistry().register(block.getBlockItem());
             }            
         }
     }

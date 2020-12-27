@@ -1,6 +1,7 @@
 package ridleydyne.ridlium.item;
 
 import net.minecraft.item.Item;
+import ridleydyne.ridlium.Ridlium;
 
 /*
 import java.util.List;
@@ -15,7 +16,10 @@ import net.minecraft.util.text.ITextComponent;
 
 public class RidliumDust extends Item {
     public RidliumDust() {
-        super(new Item.Properties().maxStackSize(64));
+        super(new Item.Properties()
+            .maxStackSize(64)
+            .group(Ridlium.ITEM_GROUP)
+        );
     }
 
     /*
