@@ -10,16 +10,17 @@ import java.util.Random;
 
 public class RidliumOre extends OreBlock {    
     public RidliumOre() {             
-        super(Properties
-            .create(Material.ROCK)
+        super(Properties.create(Material.ROCK)
             .sound(SoundType.STONE)
-            .hardnessAndResistance(3.0f, 6.0f)
+            .hardnessAndResistance(5.0f, 6.0f)
+            .harvestLevel(2)
             .harvestTool(ToolType.PICKAXE)
+            .setRequiresTool()
         );}
 
     @Override
     protected int getExperience(@Nonnull Random rand) {
-        return MathHelper.nextInt(rand, 2, 5); // same as lapis or redstone
+        return MathHelper.nextInt(rand, 1, 3);
     }
     
 }

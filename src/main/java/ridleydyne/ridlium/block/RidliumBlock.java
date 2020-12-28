@@ -12,6 +12,7 @@ public class RidliumBlock extends Block {
             .create(Material.ROCK)
             .sound(SoundType.STONE)
             .hardnessAndResistance(3.0f, 6.0f)
+            .harvestLevel(0)
             .harvestTool(ToolType.PICKAXE)
         );
     }
