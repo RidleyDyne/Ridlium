@@ -7,16 +7,17 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 
 public enum ModBlocks {
-    RIDLIUM_BLOCK(new RidliumBlock(), 64),
-    RIDLIUM_ORE(new RidliumOre(), 64);
+    RIDLIUM_BLOCK(new RidliumBlock()),
+    RIDLIUM_ORE(new RidliumOre()),
+    RIDLIUM_CRYSTAL_BLOCK(new RidliumCrystalBlock());
 
     private final Block block;
     private final BlockItem blockItem;
 
-    ModBlocks(Block block, int maxStackSize) {
+    ModBlocks(Block block) {
         this.block = block;
         this.blockItem = new BlockItem(block, new Item.Properties()
-            .maxStackSize(maxStackSize)
+            .maxStackSize(64)
             .group(Ridlium.ITEM_GROUP));
         
         this.block.setRegistryName(this.getName());

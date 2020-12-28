@@ -1,6 +1,6 @@
 {
     "replace": false,
     "values": [
-      "#forge:ores/ridlium"
+      "ridlium:ridlium_ore"
     ]
   }

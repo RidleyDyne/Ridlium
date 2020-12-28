@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "ridlium:ridlium_crystal_block"
+        }
+    ],
+    "result":
+    {
+        "item": "ridlium:ridlium_crystal",
+        "count": 4
+    }
+}

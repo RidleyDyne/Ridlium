@@ -5,14 +5,14 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.common.ToolType;
 
-public class RidliumBlock extends Block {  
+public class RidliumCrystalBlock extends Block {  
       
-    public RidliumBlock() {      
+    public RidliumCrystalBlock() {      
         super(Properties
-            .create(Material.IRON)
-            .sound(SoundType.METAL)
-            .hardnessAndResistance(3.0f, 6.0f)
-            .harvestLevel(0)
+            .create(Material.ROCK)
+            .sound(SoundType.STONE)
+            .hardnessAndResistance(6.0f, 9.0f)
+            .harvestLevel(2)
             .harvestTool(ToolType.PICKAXE)
         );
     }

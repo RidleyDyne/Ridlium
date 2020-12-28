@@ -4,5 +4,6 @@
     "item.ridlium.ridlium_ingot": "Ridlium Ingot",
     "item.ridlium.ridlium_crystal": "Ridlium Crystal",
     "block.ridlium.ridlium_ore": "Ridlium Ore",
-    "block.ridlium.ridlium_block": "Ridlium Block"
+    "block.ridlium.ridlium_block": "Ridlium Block",
+    "block.ridlium.ridlium_crystal_block": "Ridlium Crystal Block"
 }

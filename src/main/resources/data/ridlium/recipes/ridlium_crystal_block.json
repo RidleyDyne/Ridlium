@@ -10,12 +10,12 @@
     {
         "a":
         {
-            "tag": "ridlium:ingots/ridlium"
+            "tag": "ridlium:gems/ridlium"
         }
     },
     "result":
     {
-        "item": "ridlium:ridlium_block",
+        "item": "ridlium:ridlium_crystal_block",
         "count": 1
     }
 }
