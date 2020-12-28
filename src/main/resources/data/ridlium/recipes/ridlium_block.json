@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "aa",
+        "aa"
+    ],
+    "key":
+    {
+        "a":
+        {
+            "tag": "ridlium:dusts/ridlium"
+        }
+    },
+    "result":
+    {
+        "item": "ridlium:ridlium_block",
+        "count": 1
+    }
+}

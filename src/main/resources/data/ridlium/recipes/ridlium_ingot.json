@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "aaa",
+        "axa",
+        "aaa"
+    ],
+    "key":
+    {
+        "x":
+        {
+            "tag": "forge:ingots/gold"
+        },
+        "a":
+        {
+            "tag": "ridlium:dusts/ridlium"
+        }
+    },
+    "result":
+    {
+        "item": "ridlium:ridlium_ingot",
+        "count": 1
+    }
+}
