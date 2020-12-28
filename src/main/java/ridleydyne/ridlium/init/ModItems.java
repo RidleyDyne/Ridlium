@@ -5,7 +5,8 @@ import ridleydyne.ridlium.item.*;
 
 public enum ModItems {
     RIDLIUM_DUST(new RidliumDust()),
-    RIDLIUM_INGOT(new RidliumIngot());
+    RIDLIUM_INGOT(new RidliumIngot()),
+    RIDLIUM_CRYSTAL(new RidliumCrystal());
 
     private final Item item;
 

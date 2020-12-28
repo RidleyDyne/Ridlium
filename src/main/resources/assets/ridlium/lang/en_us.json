@@ -2,6 +2,7 @@
     "itemGroup.ridlium": "Ridlium",
     "item.ridlium.ridlium_dust": "Ridlium Dust",
     "item.ridlium.ridlium_ingot": "Ridlium Ingot",
+    "item.ridlium.ridlium_crystal": "Ridlium Crystal",
     "block.ridlium.ridlium_ore": "Ridlium Ore",
-    "block.ridlium.ridlium_block": "Ridlium Block" 
+    "block.ridlium.ridlium_block": "Ridlium Block"
 }
